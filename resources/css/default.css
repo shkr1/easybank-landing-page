@@ -1,0 +1,28 @@
+:root {
+    --base-size: 18px;
+    --dark-blue: hsl(233, 26%, 24%);
+    --lime-green: hsl(136, 65%, 51%);
+    --bright-cyan: hsl(192, 70%, 51%);
+    --grayish-blue: hsl(233, 8%, 62%);
+    --light-grayis-blue: hsl(220, 16%, 96%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    height: 100%;
+    font-family: 'Public Sans', sans-serif;
+    font-size: var(--base-size);
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
