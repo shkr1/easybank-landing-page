@@ -1,2 +1,2 @@
-# minimalist-portafolio
-Frontend mentor challenge "Minimalist portfolio website" 
+# easybank-landing-page
+Frontend mentor challenge "Easybank landing page" 
