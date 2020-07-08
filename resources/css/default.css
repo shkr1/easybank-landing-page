@@ -18,6 +18,7 @@ html {
     height: 100%;
     font-family: 'Public Sans', sans-serif;
     font-size: 112.5%; /* 18px */
+    background-color: var(--very-light-gray);
 }
 
 body {
@@ -56,4 +57,46 @@ h5 {
 
 .container {
     display: grid;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--white);
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+
+.header__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__link {
+    color: var(--grayish-blue);
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 1em;
+}
+
+.button {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.9em 2.5em;
+    color: var(--white);
+    background: linear-gradient(45deg, var(--lime-green), var(--bright-cyan));
+    border-radius: 4em;
+    border: none;
+}
+
+.content {
+    padding-top: 90.7px;
 }
