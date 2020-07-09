@@ -178,3 +178,47 @@ h5 {
     line-height: 1.5;
     color: var(--grayish-blue);
 }
+
+.articles {
+    padding: 8em;
+}
+
+.articles__title {
+    margin-bottom: 1em;
+}
+
+.articles__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 1em;
+}
+
+.article {
+    background-color: var(--white);
+}
+
+.article__image {
+    height: 200px;
+    border-radius: 6.25px 6.25px 0 0;
+}
+
+.article__information {
+    padding: 2em 1em;
+}
+
+.article__author {
+    font-size: 11px;
+    margin-bottom: 1em;
+    color: var(--grayish-blue);
+}
+
+.article__title {
+    font-size: 18px;
+    margin-bottom: 0.5em;
+}
+
+.article__text {
+    font-size: 14px;
+    line-height: 1.25;
+    color: var(--grayish-blue);
+}
