@@ -155,7 +155,7 @@ h5 {
 
 .information__services {
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 1em;
 }
 
