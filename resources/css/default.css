@@ -136,3 +136,45 @@ h5 {
     top: -30%;
     right: -9%;
 }
+
+.information {
+    padding: 8em;
+    background-color: var(--light-grayis-blue);
+}
+
+.information__title {
+    margin-bottom: 0.5em;
+}
+
+.information__text {
+    width: 60%;
+    line-height: 1.5;
+    color: var(--grayish-blue);
+    margin-bottom: 3em;
+}
+
+.information__services {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.service__icon {
+    margin-bottom: 1.5em;
+}
+
+.service__title {
+    margin-bottom: 1em;
+}
+
+.service__information {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--grayish-blue);
+}
