@@ -76,7 +76,7 @@ h5 {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 8em;
 }
 
 .header__links {
@@ -88,7 +88,7 @@ h5 {
 .header__link {
     color: var(--grayish-blue);
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 300;
     margin-left: 1em;
 }
 
