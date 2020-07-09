@@ -150,7 +150,7 @@ h5 {
     width: 60%;
     line-height: 1.5;
     color: var(--grayish-blue);
-    margin-bottom: 3em;
+    margin-bottom: 4em;
 }
 
 .information__services {
@@ -175,7 +175,7 @@ h5 {
 
 .service__information {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.75;
     color: var(--grayish-blue);
 }
 
