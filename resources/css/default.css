@@ -224,3 +224,73 @@ h5 {
     line-height: 1.25;
     color: var(--grayish-blue);
 }
+
+.footer {
+    display: flex;
+    position: relative;
+    padding: 3em 8em;
+    background-color: var(--dark-blue);
+}
+
+.footer__logo {
+    margin-bottom: 3em;
+}
+
+.footer__social-media {
+    display: flex;
+}
+
+.footer__icon {
+    margin-left: 0.75em;
+}
+
+.footer__icon:first-child {
+    margin-left: 0;
+}
+
+.footer__links {
+    font-size: 15px;
+    margin-left: 8em;
+    color: var(--light-grayis-blue);
+}
+
+.footer__link {
+    margin-bottom: 1.5em;
+}
+
+.footer__link:last-child {
+    margin-bottom: 0;
+}
+
+.footer__information {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-left: auto;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+.footer__button {
+    margin-bottom: 2.5em;
+}
+
+.footer__copyright {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--grayish-blue);
+}
+
+.footer__attribution {
+    font-size: 12px;
+    color: var(--white);
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.challenge, .me {
+    color: var(--grayish-blue);
+    text-decoration: wavy;
+}
