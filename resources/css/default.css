@@ -62,6 +62,7 @@ h5 {
 
 .container {
     display: grid;
+    overflow-x: hidden;
 }
 
 .header {
@@ -138,7 +139,7 @@ h5 {
 }
 
 .information {
-    padding: 8em;
+    padding: 7em 8em;
     background-color: var(--light-grayis-blue);
 }
 
@@ -150,13 +151,14 @@ h5 {
     width: 60%;
     line-height: 1.5;
     color: var(--grayish-blue);
-    margin-bottom: 4em;
+    margin-bottom: 5em;
 }
 
 .information__services {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 1em;
+    column-gap: 1em;
+    row-gap: 2em;
 }
 
 .service {
@@ -180,7 +182,7 @@ h5 {
 }
 
 .articles {
-    padding: 8em;
+    padding: 7em 8em;
 }
 
 .articles__title {
