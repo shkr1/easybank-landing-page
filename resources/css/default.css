@@ -68,7 +68,7 @@ h5 {
 .header {
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 1001;
     background-color: var(--white);
 }
 
@@ -96,6 +96,10 @@ h5 {
 
 .header__link:hover {
     color: var(--dark-blue);
+}
+
+.header__menu {
+    display: none;
 }
 
 .button {
@@ -320,4 +324,205 @@ h5 {
 .challenge, .me {
     color: var(--grayish-blue);
     text-decoration: wavy;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1139px) {
+    .container {
+        overflow-y: hidden;
+        overflow-x: unset;
+    }
+
+    .header__nav {
+        padding: 1rem;
+    }
+
+    .header__links {
+        display: none;
+    }
+
+    .header__button {
+        display: none;
+    }
+
+    .header__menu.mobile {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu__line {
+        width: 30px;
+        height: 1px;
+        background-color: black;
+        display: block;
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 5px;
+    }
+
+    .header__menu.active > .menu__line--first {
+        transform: translate(-50%, -50%);
+        transform: rotate(45deg) translate(9px, 2.5px);
+        width: 25px;
+    }
+
+    .header__menu.active > .menu__line--second {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+
+    .header__menu.active > .menu__line--third {
+        transform: translate(-50%, -50%);
+        transform: rotate(-45deg) translate(5px, 0);
+        width: 25px;
+    }
+
+    .hero {
+        padding: 85% 1rem 4rem;
+        grid-template-columns: unset;
+        background-image: url(../images/bg-intro-mobile.svg);
+        background-size: cover;
+        background-position: center -250px;
+    }
+
+    .hero__content {
+        width: 100%;
+        grid-column: unset;
+        text-align: center;
+    }
+
+    .hero__slogan {
+        font-size: 16px;
+    }
+
+    .hero__image {
+        display: none;
+    }
+
+    .hero__image.mobile {
+        display: block;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .information {
+        padding: 4rem 1rem;
+    }
+
+    .information__title {
+        text-align: center;
+    }
+
+    .information__text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .information__services {
+        grid-template-columns: unset;
+    }
+
+    .service {
+        align-items: center;
+    }
+
+    .service__information {
+        text-align: center;
+    }
+
+    .articles {
+        padding: 4rem 1rem;
+    }
+
+    .articles__title {
+        text-align: center;
+    }
+
+    .articles__list {
+        grid-template-columns: unset;
+    }
+
+    .footer {
+        padding: 2em 0 3em;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .footer__social {
+        margin-bottom: 1.5em;
+    }
+
+    .footer__logo {
+        margin-bottom: 1.5em;
+    }
+
+    .footer__links {
+        margin-left: unset;
+        text-align: center;
+    }
+
+    .footer__links:first-of-type {
+        margin-bottom: 1.5em;
+    }
+
+    .footer__links:last-of-type {
+        margin-bottom: 2em;
+    }
+
+    .footer__information {
+        margin-left: unset;
+        align-items: center;
+    }
+
+    .modal.open {
+        opacity: 1;
+        transition: opacity 0.3s ease-in;
+        z-index: 1000;
+    }
+
+    .modal__content {
+        background-color: var(--white);
+        border-radius: 3px;
+        margin: 0 auto;
+        max-height: 95%;
+        max-width: 95%;
+        top: 25%;
+        right: 0;
+        left: 0;
+        position: absolute;
+        transform: translateY(-50%);
+        color: var(--dark-blue);
+    }
+
+    .modal__links {
+        display: grid;
+        gap: 1rem;
+        text-align: center;
+        padding: 2rem 0;
+        font-size: 16px;
+    }
+
+    .modal__link {
+        cursor: pointer;
+    }
+
+    .modal__overlay {
+        background-color: var(--dark-blue);
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+    }
 }
